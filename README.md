@@ -13,7 +13,7 @@
   ```bash
   docker run --rm --runtime=nvidia --gpus all -v <host-files-path>:<container-files-path> <image-name>:<image-tag> python3 app.py input_file.json output_file.json
   ```
-Cuda and cuda toolkit needs to be installed: \
+Cuda and cuda toolkit need to be installed: \
 [cuda](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/) \
 [cuda-toolkit](https://developer.nvidia.com/cuda-downloads)
 
@@ -27,7 +27,7 @@ This project contains 3 directories:
 3. data_modelling
 
 ### counts_extractor
-Contains all the code, pickled ML moodels, pickled preprocessors and DL models weights and modules used for building the docker image, which is given as final submisssion.
+Contains all the code, pickled ML models, pickled preprocessors and DL model weights and modules used for building the docker image, which is given as the final submission.
 
 ```
 .
@@ -136,7 +136,7 @@ Configuration of the system used:
 - Driver version: 535.183.01
 
 Note: 
-For keeping the docker image size minimal, only the libraries necessary for running counts extractor and predictor scripts are included in `/counts_extractor/requirements.txt`. For running the notebooks used for training the models, some additional libraries are required, which are included in `Requirements.txt`.
+For keeping the docker image size minimal, only the libraries necessary for running the counts extractor and predictor scripts are included in `/counts_extractor/requirements.txt`. For running the notebooks used for training the models, some additional libraries are required, which are included in `Requirements.txt`.
 
 For the complete setup, including training the models, follow these steps:
   ```bash
@@ -153,9 +153,9 @@ For the complete setup, including training the models, follow these steps:
   ```
 
 For running a ray cluster follow the steps here: [On-Premise Cluster](https://docs.ray.io/en/latest/cluster/vms/user-guides/launching-clusters/on-premises.html)\
-All the requirements for training the ML models needs to installed on the worker nodes as well.\
+All the requirements for training the ML models needs to be installed on the worker nodes as well.\
 If worker nodes are not available then only a single node (head node) can be used for training.<br>
-If build for cuML or Ray fails through `Requirements.txt`, then please follow in installation guide mentioned below:
+If build for cuML or Ray fails through `Requirements.txt`, then please follow the installation guides mentioned below:
 Ray installation guide: [ray](https://docs.ray.io/en/latest/ray-overview/installation.html)
 cuML installation guide: [cuML](https://docs.rapids.ai/install)
 

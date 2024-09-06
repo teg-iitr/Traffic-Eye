@@ -1,0 +1,9 @@
+services:
+  trafficeye:
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./:/app/data:ro
+    
+    command: bash

@@ -1,0 +1,12 @@
+opencv-python
+argparse
+ultralytics
+tqdm
+pyyaml
+joblib
+scikit-learn
+xgboost
+catboost
+lapx
+
+# -e .
